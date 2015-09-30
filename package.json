@@ -1,0 +1,20 @@
+{
+  "name": "browserify-style",
+  "version": "1.0.0",
+  "description": "browserify with node and react",
+  "main": "app.js",
+  "scripts": {
+    "test": " "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^11.2.0",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1",
+    "underscore": "^1.8.3"
+  }
+}
