@@ -5,7 +5,7 @@ var app = express();
 
 // DON'T forget this line to serve the assets
 app.use('/public', express.static(__dirname + '/public'));
-
+app.use('/src', express.static(__dirname + '/src'));
 //set view path
 app.set('views', path.join(__dirname, 'views'));
 

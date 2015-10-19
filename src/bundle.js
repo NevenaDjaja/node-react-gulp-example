@@ -19810,17 +19810,19 @@ module.exports = warning;
 module.exports = require('./lib/React');
 
 },{"./lib/React":29}],157:[function(require,module,exports){
-var React = require('react');
+window.onload  = function() {
+  var React = require('react');
 
-var HelloYou = React.createClass({displayName: "HelloYou",
+var HelloName = React.createClass({displayName: "HelloName",
   render: function() {
     return React.createElement("div", null, "Hello ", this.props.name, " ");
   }
 });
 
-React.renderComponent(
-  React.createElement("helloMessage", {name: "Nena"}),
+React.render(
+  React.createElement(HelloName, {name: "Nena"}),
   document.getElementById('name')
 );
+}
 
 },{"react":156}]},{},[157]);

@@ -1,12 +1,14 @@
-var React = require('react');
+window.onload  = function() {
+  var React = require('react');
 
-var HelloYou = React.createClass({
+var HelloName = React.createClass({
   render: function() {
     return <div>Hello {this.props.name} </div>;
   }
 });
 
-React.renderComponent(
-  <helloMessage name="Nena" />,
+React.render(
+  <HelloName name="Nena" />,
   document.getElementById('name')
 );
+}
